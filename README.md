@@ -2,6 +2,7 @@
 
 * Студент: [Никита Белоусов](https://up.htmlacademy.ru/adaptive/31/user/2165163).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+* Сайт: [Проект сайта "Кэт энерджи"](https://bnvnik.github.io/2165163-cat-energy-31/).
 
 ---
 
