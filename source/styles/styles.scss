@@ -1,7 +1,42 @@
 /* GLOBAL */
+@import "./common/fonts.scss";
 @import "./common/variables.scss";
 @import "./common/global.scss";
-@import "./common/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/link.scss";
+@import "./blocks/button.scss";
+@import "./blocks/hamburger-menu.scss";
+@import "./blocks/slider-images.scss";
+
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-menu.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/catalogs.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/description-section.scss";
+@import "./blocks/examples-section.scss";
+@import "./blocks/list-definitions.scss";
+@import "./blocks/item-definitions.scss";
+@import "./blocks/product-main.scss";
+@import "./blocks/list-product.scss";
+@import "./blocks/item-product.scss";
+@import "./blocks/list-details.scss";
+@import "./blocks/product-additional.scss";
+@import "./blocks/list-product-additional.scss";
+@import "./blocks/item-product-additional.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/newsletter.scss";
+@import "./blocks/form-newsletter.scss";
+@import "./blocks/contacts-section.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/list-social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page.scss";
