@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle; /* убирает inline отступ */
+
+  font-family: $ff-accent;
+  font-size: 16px;
+  line-height: 20px;
+  color: $fc-light;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: $bg-color-bright-basic;
+}

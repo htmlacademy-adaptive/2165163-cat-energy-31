@@ -1,0 +1,45 @@
+.hero {
+  font-family: $ff-accent;
+  text-align: center;
+  color: $fc-light;
+  background: linear-gradient(rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%);
+
+  @media (min-width: $view-tablet) {
+    background: none;
+  }
+
+  @media (min-width: $view-desktop) {
+    background: linear-gradient(-90deg, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%);
+  }
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: $view-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $fc-dark;
+    text-align: left;
+  }
+}
+
+.hero__slogan {
+  line-height: 14px;
+  color: $fc-light;
+
+  @media (min-width: $view-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $fc-dark;
+    text-align: left;
+  }
+}
+
+.hero__button {
+  @media (min-width: $view-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

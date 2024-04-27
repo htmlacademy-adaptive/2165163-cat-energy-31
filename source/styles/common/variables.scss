@@ -1,1 +1,18 @@
-/* здесь используйте глобальные переменные */
+$view-tablet: 768px;
+$view-desktop: 1440px;
+
+$ff-primary: "Lato", "Tahoma", sans-serif;
+$ff-accent: "Oswald", "Arial Black", sans-serif;
+
+$fc-dark: #000000;
+$fc-dark-lighter: #111111; /* промо текст на карте и заголовок последней карточки в каталоге */
+$fc-grey: #444444;
+$fc-light: #ffffff;
+
+$bg-color-primary: #ffffff;
+$bg-color-additional-basic: #f2f2f2;
+$bg-color-additional-special: #ebebeb; /* button hover, active */
+$bg-color-bright-basic: #68b738;
+$bg-color-bright-special: #5eaa2f; /* button hover, active */
+$bg-color-special: #666666; /* ico-links footer */
+$bg-color-dark: #000000;
