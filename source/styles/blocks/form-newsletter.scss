@@ -1,0 +1,16 @@
+.form-newsletter {
+  text-align: center;
+}
+
+.form-newsletter__field-email {
+  font-family: $ff-accent;
+  font-size: 20px;
+  line-height: 30px;
+  color: $fc-grey;
+  text-transform: uppercase;
+}
+
+.form-newsletter__button {
+  font-size: 20px;
+  line-height: 26px;
+}

@@ -1,0 +1,11 @@
+.page-main__title {
+  font-family: $ff-accent;
+  font-size: 36px;
+  line-height: 36px;
+  color: $fc-dark;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

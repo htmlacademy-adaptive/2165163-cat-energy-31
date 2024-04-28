@@ -1,0 +1,38 @@
+.item-product {
+  @media (min-width: $viewport-medium) {
+    background-color: $bg-color-additional-basic;
+  }
+}
+
+.item-product--card-view-all {
+  background-color: transparent;
+}
+
+.item-product__title {
+  font-family: $ff-accent;
+  font-size: 16px;
+  line-height: 20px;
+  color: $fc-dark-special;
+  text-transform: uppercase;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.item-product__title--card-view-all {
+  color: $fc-dark-lighter;
+}
+
+.item-product__description {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

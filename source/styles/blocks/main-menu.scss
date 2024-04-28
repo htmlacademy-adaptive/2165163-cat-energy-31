@@ -5,12 +5,12 @@
   font-size: 20px;
   line-height: 20px;
 
-  @media (min-width: $view-tablet) {
+  @media (min-width: $viewport-medium) {
     font-size: 18px;
     line-height: 24px;
   }
 
-  @media (min-width: $view-desktop) {
+  @media (min-width: $viewport-big) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -19,8 +19,16 @@
 .main-menu__link {
   font-family: $ff-accent;
   color: $fc-dark;
+}
 
-  @media (min-width: $view-desktop) {
+.main-menu__link--index-page {
+  @media (min-width: $viewport-big) {
     color: $fc-light;
+  }
+}
+
+.main-menu__link--inner-page {
+  @media (min-width: $viewport-big) {
+    color: $fc-dark-lighter;
   }
 }

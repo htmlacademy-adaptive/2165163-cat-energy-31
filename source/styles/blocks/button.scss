@@ -1,7 +1,6 @@
 .button {
-  display: inline-block;
+  display: block;
   padding: 10px;
-  vertical-align: middle; /* убирает inline отступ */
 
   font-family: $ff-accent;
   font-size: 16px;
@@ -16,4 +15,9 @@
 
 .button--primary {
   background-color: $bg-color-bright-basic;
+}
+
+.button--card-view-all {
+  background-color: $bg-color-additional-basic;
+  color: $fc-grey;
 }

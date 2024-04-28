@@ -21,20 +21,18 @@
       <nav class="page-header__main-nav main-nav hamburger-menu" aria-label="Главное меню">
         <ul class="page-header__main-menu main-menu hamburger-menu__list">
           <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--current" href="index.html" aria-current="page">главная</a>
+            <a class="main-menu__link main-menu__link--index-page main-menu__link--current" href="index.html" aria-current="page">главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="catalog.html">каталог продукции</a>
+            <a class="main-menu__link main-menu__link--index-page" href="catalog.html">каталог продукции</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">подбор программы</a>
+            <a class="main-menu__link main-menu__link--index-page" href="#">подбор программы</a>
           </li>
         </ul>
         <button class="main-nav__hamburger-button hamburger-menu__toogle hamburger-menu__toogle--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
-    </header>
-    <main class="page-main">
-      <section class="page-main__hero hero">
+      <div class="page-header__hero hero">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
@@ -46,7 +44,9 @@
           <img class="hero__image" src="images/product-big-mobile@1x.png" srcset="images/product-big-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая баночка корма на 500 грамм, с надписью Cat Energy Pro со вкусом курицы">
         </picture>
         <a class="hero__button button button--primary" href="#">подобрать программу</a>
-      </section>
+      </div>
+    </header>
+    <main class="page-main">
       <section class="page-main__catalogs catalogs">
         <h2 class="visually-hidden">Каталоги товаров</h2>
         <ul class="catalogs__list">
@@ -84,7 +84,7 @@
             <dd class="item-definitions__definition">затрачено времени</dd>
           </div>
         </dl>
-        <p class="examples-section__desc-strong">Затраты на питание: 15 000 РУБ.</p>
+        <p class="examples-section__desc-strong">Затраты на питание: <span class="examples-section__price">15 000 РУБ.</span></p>
         <div class="examples-section__slider-images slider-images">
           <div class="slider-images__wrapper">
             <picture>
@@ -106,7 +106,7 @@
         </div>
       </section>
       <section class="page-main__contacts-section contacts-section">
-        <div class="contacts-section__wrapper-text">
+        <div class="contacts-section__wrapper-text contacts-section__wrapper-text--index-page">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts-section__slogan">приглашаем к сотрудничеству дилеров!</p>
           <address  class="contacts-section__address">

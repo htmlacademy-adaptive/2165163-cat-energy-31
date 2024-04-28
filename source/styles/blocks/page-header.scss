@@ -1,0 +1,5 @@
+.page-header {
+  @media (min-width: $viewport-big) {
+    background: linear-gradient(to left, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%);
+  }
+}
