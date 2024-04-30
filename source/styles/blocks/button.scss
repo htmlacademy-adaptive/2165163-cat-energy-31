@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  padding: 10px;
+
+  font-family: $ff-accent;
+  font-size: 16px;
+  line-height: 20px;
+  color: $fc-light;
+  text-align: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: $bg-color-bright-basic;
+}
+
+.button--card-view-all {
+  background-color: $bg-color-additional-basic;
+  color: $fc-grey;
+}

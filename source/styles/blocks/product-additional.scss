@@ -1,0 +1,16 @@
+.product-additional__title {
+  font-family: $ff-accent;
+  font-size: 24px;
+  line-height: 24px;
+  color: $fc-dark;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $viewport-big) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,38 @@
+.examples-section {
+  background-color: $bg-color-special-lighter;
+}
+
+.examples-section__title {
+  font-family: $ff-accent;
+  font-size: 36px;
+  line-height: 40px;
+  color: $fc-dark;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.examples-section__desc {
+  @media (min-width: $viewport-medium) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.examples-section__desc-strong {
+  font-family: $ff-accent;
+  line-height: 20px;
+  color: $fc-dark;
+  text-align: center;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $viewport-big) {
+    text-align: left;
+  }
+}

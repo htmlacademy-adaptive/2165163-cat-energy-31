@@ -1,0 +1,36 @@
+.catalog {
+  background-color: $bg-color-additional-basic;
+}
+
+.catalog__title {
+  font-family: $ff-accent;
+  font-size: 24px;
+  line-height: 37px;
+  color: $fc-dark;
+  text-transform: uppercase;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog__desc {
+  @media (min-width: $viewport-medium) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $fc-dark;
+  }
+}
+
+.catalog__button {
+  padding-left: 0;
+  color: $fc-dark;
+  text-align: left;
+  line-height: 16px;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

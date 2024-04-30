@@ -1,0 +1,22 @@
+.item-product-additional__title {
+  font-family: $ff-accent;
+  font-size: 16px;
+  line-height: 16px;
+  color: $fc-dark-special;
+  text-transform: uppercase;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.item-product-additional__list-details {
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
