@@ -1,1 +1,16 @@
-/* стили для гамбургер меню */
+.hamburger-menu__toogle {
+  @include icon-mask(url("../../icons/stack.svg#exit"), 18px 18px);
+  width: 18px;
+  height: 18px;
+  background-color: $bg-color-dark;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

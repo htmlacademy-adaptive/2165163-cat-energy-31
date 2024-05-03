@@ -2,10 +2,26 @@
   @media (min-width: $viewport-medium) {
     background-color: $bg-color-additional-basic;
   }
-}
 
-.item-product--card-view-all {
-  background-color: transparent;
+  &--card-view-all {
+    background-color: transparent;
+  }
+
+  &--card-view-all::before {
+    @include icon-mask(url("../../icons/stack.svg#plus"), 30px 30px);
+
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $viewport-medium) {
+      mask-size: 60px 60px;
+      width: 60px;
+      height: 60px;
+    }
+  }
 }
 
 .item-product__title {
@@ -15,15 +31,16 @@
   color: $fc-dark-special;
   text-transform: uppercase;
 
+  &--card-view-all {
+    color: $fc-dark-lighter;
+    text-align: center;
+  }
+
   @media (min-width: $viewport-medium) {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
   }
-}
-
-.item-product__title--card-view-all {
-  color: $fc-dark-lighter;
 }
 
 .item-product__description {

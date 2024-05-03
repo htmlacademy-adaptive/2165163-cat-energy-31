@@ -1,3 +1,36 @@
 .list-social {
   @include list-reset();
 }
+
+.list-social__link {
+  &::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 22px;
+    background-color: $bg-color-special;
+
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+
+  &--vk::before {
+    @include icon-mask(url("../../icons/stack.svg#logo-vk"), 27px 17px);
+  }
+
+  &--youtube::before {
+    @include icon-mask(url("../../icons/stack.svg#logo-youtube"), 24px 19px);
+  }
+
+  &--telegram::before {
+    @include icon-mask(url("../../icons/stack.svg#logo-telegram"), 20px 17px);
+  }
+
+  &:hover::before {
+    background-color: $bg-color-bright-basic;
+  }
+
+  &:active::before {
+    background-color: $bg-color-bright-basic;
+    opacity: 0.3;
+  }
+}

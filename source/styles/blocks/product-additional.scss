@@ -14,3 +14,15 @@
     line-height: 40px;
   }
 }
+
+.product-additional__promo {
+  min-height: 290px;
+
+  @media (min-width: $viewport-medium) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $viewport-big) {
+    min-height: 288px;
+  }
+}
