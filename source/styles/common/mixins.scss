@@ -13,3 +13,10 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin icon-mask($mask-image, $mask-size) {
+  mask-image: $mask-image;
+  mask-size: $mask-size;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}

@@ -19,16 +19,42 @@
 .main-menu__link {
   font-family: $ff-accent;
   color: $fc-dark;
-}
 
-.main-menu__link--index-page {
+  transition: opacity 0.3s;
+
   @media (min-width: $viewport-big) {
     color: $fc-light;
   }
-}
 
-.main-menu__link--inner-page {
-  @media (min-width: $viewport-big) {
-    color: $fc-dark-lighter;
+  &--index-page.main-menu__link--current {
+    @media (min-width: $viewport-big) {
+      text-decoration-color: $fc-light;
+    }
+  }
+
+  &--inner-page {
+    @media (min-width: $viewport-big) {
+      color: $fc-dark-lighter;
+    }
+  }
+
+  &--current {
+    cursor: default;
+
+    @media (min-width: $viewport-medium) {
+      text-decoration: underline;
+      text-decoration-color: $bg-color-bright-basic;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 8px;
+      text-underline-position: under;
+    }
+  }
+
+  &:not(.main-menu__link--current):hover {
+    opacity: 0.6;
+  }
+
+  &:not(.main-menu__link--current):active {
+    opacity: 0.3;
   }
 }

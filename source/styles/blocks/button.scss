@@ -5,19 +5,76 @@
   font-family: $ff-accent;
   font-size: 16px;
   line-height: 20px;
-  color: $fc-light;
   text-align: center;
-
   text-decoration: none;
   text-transform: uppercase;
+
   cursor: pointer;
-}
+  transition: opacity 0.3s, background-color 0.3s, color 0.3s;
 
-.button--primary {
-  background-color: $bg-color-bright-basic;
-}
+  &--catalog {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: max-content;
+    padding-left: 0;
+    color: $fc-dark;
+    line-height: 16px;
+    text-align: left;
 
-.button--card-view-all {
-  background-color: $bg-color-additional-basic;
-  color: $fc-grey;
+    &::after {
+      @include icon-mask(url("../../icons/stack.svg#arrow"), 24px 12px);
+      flex-shrink: 0;
+      content: "";
+      display: block;
+      width: 24px;
+      height: 12px;
+      background-color: $bg-color-dark;
+
+      transition: all 0.3s;
+    }
+
+    @media (min-width: $viewport-medium) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  &--primary {
+    background-color: $bg-color-bright-basic;
+    color: $fc-light;
+  }
+
+  &--card-view-all {
+    background-color: $bg-color-additional-basic;
+    color: $fc-grey;
+  }
+
+  &--catalog:hover::after,
+  &--catalog:active::after {
+    mask-size: 32px 12px;
+    width: 32px;
+    height: 12px;
+  }
+
+  &--catalog:active {
+    opacity: 0.3;
+  }
+
+  &--primary:hover {
+    background-color: $bg-color-bright-special;
+  }
+
+  &--primary:active {
+    background-color: $bg-color-bright-special;
+    color: rgba($fc-light, 0.3);
+  }
+
+  &--card-view-all:hover {
+    background-color: $bg-color-additional-special;
+  }
+
+  &--card-view-all:active {
+    opacity: 0.3;
+  }
 }

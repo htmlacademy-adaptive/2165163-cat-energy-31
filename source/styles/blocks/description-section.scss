@@ -15,6 +15,41 @@
 }
 
 .description-section__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-color-bright-basic;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $viewport-medium) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--icon-substance::before {
+    background-image: url("../../icons/stack.svg#sheet");
+    background-size: 25px 28px;
+  }
+
+  &--icon-consistency::before {
+    background-image: url("../../icons/stack.svg#water");
+    background-size: 26px 28px;
+  }
+
+  &--icon-eat::before {
+    background-image: url("../../icons/stack.svg#eat");
+    background-size: 25px 30px;
+  }
+
+  &--icon-weight::before {
+    background-image: url("../../icons/stack.svg#scales");
+    background-size: 26px 31px;
+  }
+
   @media (min-width: $viewport-medium) {
     font-size: 16px;
     line-height: 24px;

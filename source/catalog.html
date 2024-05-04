@@ -13,9 +13,11 @@
   </head>
   <body class="page__body body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo-site logo-site" href="index.html">
         <picture>
-          <img src="/" width="1" height="1" alt="Логотип сайта Cat Energy">
+          <source media="(min-width: 1440px)" width="202" height="59" type="image/svg+xml" srcset="images/logos/logo-cat-energy-big.svg">
+          <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logos/logo-cat-energy-medium.svg">
+          <img class="logo-site__image" src="images/logos/logo-cat-energy-small.svg" width="190" height="38" alt="Логотип сайта Cat Energy">
         </picture>
       </a>
       <nav class="page-header__main-nav main-nav hamburger-menu" aria-label="Главное меню">
@@ -24,7 +26,7 @@
             <a class="main-menu__link main-menu__link--inner-page" href="index.html">главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--inner-page main-menu__link--current" href="catalog.html" aria-current="page">каталог продукции</a>
+            <a class="main-menu__link main-menu__link--inner-page main-menu__link--current" href="#" aria-current="page">каталог продукции</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link main-menu__link--inner-page" href="#">подбор программы</a>
@@ -359,29 +361,28 @@
 
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo-site" href="index.html">
-        <img class="page-footer__logo-site-image" src="/" width="1" height="1" alt="Логотип сайта Cat Energy">
+      <a class="page-footer__logo-site logo-site" href="index.html">
+        <img class="logo-site__image" src="images/logos/logo-cat-energy-mini.svg" width="128" height="24" alt="Логотип сайта Cat Energy">
       </a>
       <ul class="page-footer__list-social list-social">
         <li class="list-social__item">
-          <a class="list-social__link" href="#">
-            <span class="visually-hidden">Вконтакте</span>
+          <a class="list-social__link list-social__link--vk" href="#">
+            <span class="visually-hidden">перейти во Вконтакте</span>
           </a>
         </li>
         <li class="list-social__item">
-          <a class="list-social__link" href="#">
-            <span class="visually-hidden">Youtube</span>
+          <a class="list-social__link list-social__link--youtube" href="#">
+            <span class="visually-hidden">перейти в Youtube</span>
           </a>
         </li>
         <li class="list-social__item">
-          <a class="list-social__link" href="#">
-            <span class="visually-hidden">Телеграм</span>
+          <a class="list-social__link list-social__link--telegram" href="#">
+            <span class="visually-hidden">перейти в Телеграм</span>
           </a>
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
-        <img class="copyright__logo" src="/" width="1" height="1" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
