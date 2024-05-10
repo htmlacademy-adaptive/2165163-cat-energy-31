@@ -1,3 +1,14 @@
 .list-product {
   @include list-reset();
+
+  @media (min-width: $viewport-medium) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    gap: 141px 60px;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 144px 80px;
+  }
 }

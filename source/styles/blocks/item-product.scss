@@ -1,25 +1,26 @@
 .item-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
   @media (min-width: $viewport-medium) {
     background-color: $bg-color-additional-basic;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr auto;
+    padding: 40px 37px;
+  }
+
+  @media (min-width: $viewport-big) {
+    padding: 40px 38px;
   }
 
   &--card-view-all {
+    grid-template-columns: 1fr;
     background-color: transparent;
-  }
-
-  &--card-view-all::before {
-    @include icon-mask(url("../../icons/stack.svg#plus"), 30px 30px);
-
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-color: #d3d3d3;
 
     @media (min-width: $viewport-medium) {
-      mask-size: 60px 60px;
-      width: 60px;
-      height: 60px;
+      border: 2px solid $bg-color-additional-basic;
     }
   }
 }
@@ -43,7 +44,47 @@
   }
 }
 
-.item-product__description {
+.item-product__link-image {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 107px;
+
+  @media (min-width: $viewport-medium) {
+    width: 200px;
+    height: 210px;
+    margin-top: -116px;
+  }
+
+  @media (min-width: $viewport-medium) {
+    width: 169px;
+    height: 210px;
+  }
+
+  &--card-view-all::before {
+    @include icon-mask(url("../../icons/stack.svg#plus"), 30px 30px);
+
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #d3d3d3;
+
+    @media (min-width: $viewport-medium) {
+      mask-size: 60px 60px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.item-product__image {
+  display: block;
+}
+
+.item-product__description { /* card view all */
   font-size: 12px;
   line-height: 16px;
   text-align: center;
@@ -52,4 +93,8 @@
     font-size: 16px;
     line-height: 18px;
   }
+}
+
+.item-product__button {
+  grid-column: 1 / -1;
 }

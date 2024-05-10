@@ -1,8 +1,33 @@
-.contacts-section__wrapper-text--inner-page {
-  background-color: $bg-color-additional-basic;
+.contacts-section {
+  @media (min-width: $viewport-big) {
+    position: relative;
+  }
+}
+
+.contacts-section__wrapper-text {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $viewport-medium) {
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   @media (min-width: $viewport-big) {
+    position: absolute;
+    top: 95px;
+    right: 50%;
     background-color: $bg-color-primary;
+  }
+
+  &--inner-page {
+    background-color: $bg-color-additional-basic;
+
+    @media (min-width: $viewport-big) {
+      background-color: $bg-color-primary;
+    }
   }
 }
 
@@ -31,4 +56,16 @@
   @media (min-width: $viewport-big) {
     text-align: left;
   }
+}
+
+.contacts-section__wrapper-map {
+  min-height: 362px;
+  max-height: 400px;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.contacts-section__image-map {
+  display: block;
+  width: 100%;
 }

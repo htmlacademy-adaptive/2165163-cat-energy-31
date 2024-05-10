@@ -1,8 +1,14 @@
 .list-social {
   @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-social__link {
+  display: block;
+  padding: 20px 12px;
+
   &::before {
     content: "";
     display: block;

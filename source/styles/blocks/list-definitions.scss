@@ -1,1 +1,12 @@
-/* styles */
+.list-definitions {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $viewport-medium) {
+    gap: 43px;
+  }
+
+  @media (min-width: $viewport-medium) {
+    justify-content: flex-start;
+  }
+}

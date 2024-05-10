@@ -1,0 +1,14 @@
+.content-wrapper {
+  min-width: $content-min-width;
+  max-width: $content-max-width;
+  padding: 0 $page-padding-small;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-medium) {
+    padding: 0 $page-padding-medium;
+  }
+
+  @media (min-width: $viewport-big) {
+    padding: 0 $page-padding-big;
+  }
+}

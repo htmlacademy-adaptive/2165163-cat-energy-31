@@ -1,5 +1,13 @@
+.hamburger-menu {
+  position: relative;
+}
+
 .hamburger-menu__toogle {
   @include icon-mask(url("../../icons/stack.svg#exit"), 18px 18px);
+  position: absolute;
+  top: -25px;
+  transform: translateY(-100%);
+  right: 0;
   width: 18px;
   height: 18px;
   background-color: $bg-color-dark;

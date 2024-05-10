@@ -1,1 +1,5 @@
-/* стили для меню навигации */
+.main-nav__hamburger-button {
+  @media (min-width: $viewport-medium) {
+    display: none;
+  }
+}
