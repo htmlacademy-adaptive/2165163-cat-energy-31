@@ -1,3 +1,18 @@
+.item-product-additional {
+  @media (min-width: $viewport-big) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.item-product-additional__wrapper-description {
+  @media (min-width: $viewport-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .item-product-additional__title {
   font-family: $ff-accent;
   font-size: 16px;
@@ -19,4 +34,8 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.item-product-additional__button {
+  min-width: 244px;
 }

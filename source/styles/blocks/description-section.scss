@@ -12,10 +12,35 @@
 
 .description-section__list {
   @include list-reset();
+
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $viewport-medium) {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 137px;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 7%;
+  }
 }
 
 .description-section__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $viewport-medium) {
+    min-height: 280px;
+    flex-direction: column;
+    gap: 31px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &::before {
+    flex-shrink: 0;
     content: "";
     display: block;
     width: 60px;
@@ -48,10 +73,5 @@
   &--icon-weight::before {
     background-image: url("../../icons/stack.svg#scales");
     background-size: 26px 31px;
-  }
-
-  @media (min-width: $viewport-medium) {
-    font-size: 16px;
-    line-height: 24px;
   }
 }

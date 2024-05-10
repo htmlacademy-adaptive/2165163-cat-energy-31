@@ -1,9 +1,10 @@
 .hero {
+  min-height: 495px;
   font-family: $ff-accent;
   text-align: center;
   color: $fc-light;
   background-image:
-    linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%),
+    linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 64.6%, $bg-color-primary 35.4%),
     image-set(
       url("../../images/backgrounds/background-mobile-1@1x.webp") type("image/webp") 1x,
       url("../../images/backgrounds/background-mobile-1@2x.webp") type("image/webp") 2x,
@@ -19,33 +20,72 @@
   }
 }
 
+.hero__content-wrapper {
+  display: grid;
+
+  @media (min-width: $viewport-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .hero__title {
   font-size: 36px;
   line-height: 36px;
 
   @media (min-width: $viewport-medium) {
+    grid-column: 1 / -1;
     font-size: 60px;
     line-height: 60px;
     color: $fc-dark;
     text-align: left;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-column: 1 / 2;
   }
 }
 
 .hero__slogan {
   line-height: 14px;
   color: $fc-light;
+  text-transform: uppercase;
 
   @media (min-width: $viewport-medium) {
+    grid-column: 1 / -1;
     font-size: 20px;
     line-height: 20px;
     color: $fc-dark;
     text-align: left;
   }
+
+  @media (min-width: $viewport-big) {
+    grid-column: 1 / 2;
+  }
+}
+
+.hero__image-wrapper {
+  @media (min-width: $viewport-medium) {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
 }
 
 .hero__button {
   @media (min-width: $viewport-medium) {
+    grid-column: 1 / 2;
+    grid-row: 3;
+    width: max-content;
+    height: max-content;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-column: 1 / 2;
   }
 }

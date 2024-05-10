@@ -1,5 +1,19 @@
 .promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-image: linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%);
+
+  @media (min-width: $viewport-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $viewport-big) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &::before {
     @include icon-mask(url("../../icons/stack.svg#present"), 78px 80px);

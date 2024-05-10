@@ -1,16 +1,36 @@
 .form-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
   text-align: center;
+
+  @media (min-width: $viewport-medium) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    padding-left: 68px;
+    padding-right: 68px;
+  }
 }
 
 .form-newsletter__field-email {
+  width: 100%;
+  min-width: 280px;
+  max-width: 496px;
   font-family: $ff-accent;
   font-size: 20px;
   line-height: 30px;
   color: $fc-grey;
   text-transform: uppercase;
+
+  // @media (min-width: $viewport-medium) {
+
+  // }
 }
 
 .form-newsletter__button {
   font-size: 20px;
   line-height: 26px;
+  border: none;
 }

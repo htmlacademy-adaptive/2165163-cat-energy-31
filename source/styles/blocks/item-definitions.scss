@@ -1,3 +1,7 @@
+.item-definitions {
+  text-align: center;
+}
+
 .item-definitions__term {
   font-family: $ff-accent;
   font-size: 24px;
@@ -11,6 +15,7 @@
 }
 
 .item-definitions__definition {
+  margin-left: 0;
   font-size: 12px;
   line-height: 12px;
 

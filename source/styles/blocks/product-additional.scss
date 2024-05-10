@@ -15,6 +15,18 @@
   }
 }
 
+.product-additional__wrapper {
+  @media (min-width: $viewport-big) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+.product-additional__list-product-additional {
+  flex-grow: 1;
+}
+
 .product-additional__promo {
   min-height: 290px;
 

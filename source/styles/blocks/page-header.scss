@@ -1,5 +1,45 @@
 .page-header--index-page {
   @media (min-width: $viewport-big) {
-    background: linear-gradient(to left, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%);
+    min-height: 720px;
+    background-image:
+      linear-gradient(to left, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%),
+      image-set(url("../../images/backgrounds/background-desktop-1@1x.webp") type("image/webp") 1x,
+      url("../../images/backgrounds/background-desktop-1@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/background-desktop-1@1x.jpg") 1x,
+      url("../../images/backgrounds/background-desktop-1@2x.jpg") 2x),
+      linear-gradient(to left, #403e49 50%, $bg-color-primary 50%);
+    background-size: 100%, 1040px 694px;
+    background-position: center, calc(50% + 520px) bottom;
+    background-repeat: no-repeat;
+
+    // background-image: linear-gradient(to left, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%),
+    // image-set(url("../../images/backgrounds/background-desktop-1@1x.webp") type("image/webp") 1x,
+    //   url("../../images/backgrounds/background-desktop-1@2x.webp") type("image/webp") 2x,
+    //   url("../../images/backgrounds/background-desktop-1@1x.jpg") 1x,
+    //   url("../../images/backgrounds/background-desktop-1@2x.jpg") 2x),
+    //   linear-gradient(to left, #403e49 50%, $bg-color-primary 50%);
+    // background-size: 100%, 1040px 694px;
+    // background-position: center, calc(50% + 520px) bottom;
+    // background-repeat: no-repeat;
+  }
+}
+
+.page-header__content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $viewport-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header__main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $viewport-medium) {
+    flex-direction: row;
   }
 }
