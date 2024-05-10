@@ -8,6 +8,11 @@
   }
 }
 
+.list-details__item {
+  display: flex;
+  justify-content: space-between;
+}
+
 .list-details__definition {
   text-align: right;
 }
