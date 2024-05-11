@@ -103,23 +103,19 @@
             </div>
           </div>
           <div class="examples-section__slider-images slider-images">
-            <div class="slider-images__wrapper">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-tablet-1@1x.webp, images/slider-image-tablet-1@2x.webp 2x">
-                <source width="280" height="256" type="image/webp" srcset="images/slider-image-mobile-1@1x.webp, images/slider-image-mobile-1@2x.webp 2x">
-                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-tablet-1@1x.png 1x, images/slider-image-tablet-1@2x.png 2x">
-                <img class="slider-images__image" src="images/slider-image-mobile-1@1x.png" srcset="images/slider-image-mobile-1@2x.png 2x" width="280" height="256" alt="Кот с лишним весом">
-              </picture>
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-tablet-2@1x.webp, images/slider-image-tablet-2@2x.webp 2x">
-                <source width="280" height="256" type="image/webp" srcset="images/slider-image-mobile-2@1x.webp, images/slider-image-mobile-2@2x.webp 2x">
-                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-tablet-2@1x.png 1x, images/slider-image-tablet-2@2x.png 2x">
-                <img class="slider-images__image" src="images/slider-image-mobile-2@1x.png" srcset="images/slider-image-mobile-2@2x.png 2x" width="280" height="256" alt="Кот без лишнего веса">
-              </picture>
-            </div>
-            <div class="slider-images__toogle">
-              <button class="slider-images__button" type="button"><span class="visually-hidden">Сдвинуть, чтобы увидеть изображение</span></button>
-            </div>
+            <picture class="slider-images__image-wrapper slider-images__image-wrapper--before">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-tablet-1@1x.webp, images/slider-image-tablet-1@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/slider-image-mobile-1@1x.webp, images/slider-image-mobile-1@2x.webp 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-tablet-1@1x.png 1x, images/slider-image-tablet-1@2x.png 2x">
+              <img class="slider-images__image" src="images/slider-image-mobile-1@1x.png" srcset="images/slider-image-mobile-1@2x.png 2x" width="280" height="256" alt="Кот с лишним весом">
+            </picture>
+            <picture  class="slider-images__image-wrapper slider-images__image-wrapper--after">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-tablet-2@1x.webp, images/slider-image-tablet-2@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/slider-image-mobile-2@1x.webp, images/slider-image-mobile-2@2x.webp 2x">
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-tablet-2@1x.png 1x, images/slider-image-tablet-2@2x.png 2x">
+              <img class="slider-images__image" src="images/slider-image-mobile-2@1x.png" srcset="images/slider-image-mobile-2@2x.png 2x" width="280" height="256" alt="Кот без лишнего веса">
+            </picture>
+            <button class="slider-images__button" type="button"><span class="visually-hidden">Сдвинуть, чтобы увидеть изображение</span></button>
           </div>
         </div>
       </section>
