@@ -1,6 +1,10 @@
 .slider-images {
   position: relative;
   display: grid;
+
+  @media (min-width: $viewport-big) {
+    align-self: flex-start;
+  }
 }
 
 .slider-images__image-wrapper {
@@ -12,6 +16,15 @@
     width: 50%;
     overflow: hidden;
     background-color: $bg-color-special-lighter;
+
+    @media (min-width: $viewport-medium) {
+      background-color: transparent;
+      background-image: linear-gradient(to top, $bg-color-special-lighter 70.6%, $bg-color-primary 29.4%);
+    }
+
+    @media (min-width: $viewport-big) {
+      background-image: linear-gradient(to top, $bg-color-special-lighter 73.5%, $bg-color-primary 26.5%);
+    }
   }
 
   &--after {

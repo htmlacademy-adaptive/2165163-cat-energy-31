@@ -34,7 +34,7 @@
 
   @media (min-width: $viewport-medium) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 76px;
+    gap: 37px 60px;
   }
 
   @media (min-width: $viewport-big) {
@@ -98,7 +98,7 @@
       z-index: -1;
       top: -39px;
       left: 50%;
-      transform: translate(-31%);
+      transform: translate(-39%);
       content: counter(list-item-desk);
       counter-increment: list-item-desk;
       display: block;

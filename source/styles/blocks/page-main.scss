@@ -38,4 +38,12 @@
 
 .page-main__description-section {
   margin-bottom: 49px;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-bottom: 29px;
+  }
 }

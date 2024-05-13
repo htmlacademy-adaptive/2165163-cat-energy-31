@@ -10,7 +10,8 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 28px;
+    padding-right: 5px;
+    column-gap: 34px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -20,6 +21,7 @@
     font-size: 20px;
     line-height: 30px;
     column-gap: 34px;
+    padding-right: 0;
   }
 }
 
