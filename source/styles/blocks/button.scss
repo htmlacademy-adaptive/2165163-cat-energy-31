@@ -15,12 +15,18 @@
   &--catalog {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     width: max-content;
     padding-left: 0;
     color: $fc-dark;
     line-height: 16px;
     text-align: left;
+
+    @media (min-width: $viewport-medium) {
+      font-size: 20px;
+      line-height: 30px;
+      gap: 25px;
+    }
 
     &::after {
       @include icon-mask(url("../../icons/stack.svg#arrow"), 24px 12px);
@@ -32,11 +38,6 @@
       background-color: $bg-color-dark;
 
       transition: all 0.3s;
-    }
-
-    @media (min-width: $viewport-medium) {
-      font-size: 20px;
-      line-height: 30px;
     }
   }
 

@@ -103,10 +103,7 @@
     grid-row: 3;
     width: 709px;
     height: 609px;
-
-    // transform: none;
-    // transform: translate(-91px, -7px);
-    // transform: translate(-296px, -7px);
+    margin-bottom: 0;
     transform: translate(-290px, -7px);
   }
 
@@ -122,13 +119,6 @@
 
 .hero__image {
   display: block;
-
-  @media (min-width: $viewport-medium) {
-    // max-width: none;
-    // width: 709px;
-    // height: 609px;
-    // transform: translate(-45px, -8px);
-  }
 }
 
 .hero__button {

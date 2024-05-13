@@ -1,12 +1,27 @@
+.description-section {
+  @media ($viewport-medium <= width < $viewport-big) {
+    margin-left: calc($page-padding-medium * -1);
+    margin-right: calc($page-padding-medium * -1);
+    padding-left: $page-padding-medium;
+    padding-right: $page-padding-medium;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .description-section__title {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-family: $ff-accent;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   color: $fc-dark;
 
   @media (min-width: $viewport-medium) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 72px;
   }
 }
 
@@ -15,19 +30,21 @@
 
   display: grid;
   gap: 20px;
+  counter-reset: list-item-desk;
 
   @media (min-width: $viewport-medium) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 37px 76px;
   }
 
   @media (min-width: $viewport-big) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 37px 7%;
+    gap: 37px 6.4%;
   }
 }
 
 .description-section__item {
+  position: relative;
   display: flex;
   gap: 20px;
 
@@ -73,5 +90,40 @@
   &--icon-weight::before {
     background-image: url("../../icons/stack.svg#scales");
     background-size: 26px 31px;
+  }
+
+  &::after {
+    @media (min-width: $viewport-medium) {
+      position: absolute;
+      z-index: -1;
+      top: -39px;
+      left: 50%;
+      transform: translate(-31%);
+      content: counter(list-item-desk);
+      counter-increment: list-item-desk;
+      display: block;
+      font-family: $ff-accent;
+      font-size: 280px;
+      line-height: 280px;
+      color: $bg-color-additional-basic;
+    }
+
+    @media (min-width: $viewport-big) {
+      transform: translate(-7%);
+    }
+  }
+}
+
+.description-section__text {
+  padding-top: 2px;
+
+  @media (min-width: $viewport-medium) {
+    padding-top: 0;
+  }
+}
+
+.description-section__text-line-break {
+  @media (width < $viewport-medium) {
+    display: none;
   }
 }

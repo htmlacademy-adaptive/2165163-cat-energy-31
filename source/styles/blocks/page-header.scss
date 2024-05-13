@@ -10,6 +10,12 @@
   }
 
   &--index-page {
+    margin-bottom: 5px;
+
+    @media (min-width: $viewport-medium) {
+      margin-bottom: 0;
+    }
+
     @media (min-width: $viewport-big) {
       min-height: 694px;
       background-image:
@@ -22,6 +28,7 @@
       background-size: 100%, 1040px 694px;
       background-position: center, calc(50% + 520px) bottom;
       background-repeat: no-repeat;
+      margin-bottom: 82px;
     }
   }
 }

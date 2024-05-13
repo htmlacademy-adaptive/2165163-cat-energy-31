@@ -1,4 +1,16 @@
-.page-main__title {
+.page-main {
+  &--index-page {
+    @media (min-width: $viewport-medium) {
+      margin-top: -7px;
+    }
+
+    @media (min-width: $viewport-big) {
+      margin-top: 0;
+    }
+  }
+}
+
+.page-main__title { /* title in inner page */
   font-family: $ff-accent;
   font-size: 36px;
   line-height: 36px;
@@ -10,4 +22,20 @@
     line-height: 60px;
     margin-bottom: 165px;
   }
+}
+
+.page-main__catalogs {
+  margin-bottom: 20px;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-bottom: 71px;
+  }
+}
+
+.page-main__description-section {
+  margin-bottom: 49px;
 }
