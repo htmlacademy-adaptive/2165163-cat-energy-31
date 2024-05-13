@@ -24,8 +24,8 @@
           </picture>
         </a>
         <nav class="page-header__main-nav main-nav hamburger-menu" aria-label="Главное меню">
-          <button class="main-nav__hamburger-button hamburger-menu__toogle hamburger-menu__toogle--hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="page-header__main-menu main-menu hamburger-menu__list">
+          <button class="main-nav__hamburger-button hamburger-menu__toogle hamburger-menu__toogle--close hamburger-menu__toogle--no-js" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="page-header__main-menu main-menu hamburger-menu__list hamburger-menu__list--open hamburger-menu__list--no-js">
             <li class="main-menu__item">
               <a class="main-menu__link main-menu__link--index-page main-menu__link--current" href="#" aria-current="page">главная</a>
             </li>
@@ -40,18 +40,16 @@
       </div>
       <div class="page-header__hero hero">
         <div class="hero__content-wrapper content-wrapper">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <h1 class="hero__title">Функциональное<br> питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <div class="hero__image-wrapper">
-            <picture>
-              <source media="(min-width: 1320px)" width="552" height="499" type="image/webp" srcset="images/product-big-desktop@1x.webp, images/product-big-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/product-big-tablet@1x.webp, images/product-big-tablet@2x.webp 2x">
-              <source width="280" height="270" type="image/webp" srcset="images/product-big-mobile@1x.webp, images/product-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1320px)" width="552" height="499" type="image/png" srcset="images/product-big-desktop@1x.png 1x, images/product-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/product-big-tablet@1x.png 1x, images/product-big-tablet@2x.png 2x">
-              <img class="hero__image" src="images/product-big-mobile@1x.png" srcset="images/product-big-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая баночка корма на 500 грамм, с надписью Cat Energy Pro со вкусом курицы">
-            </picture>
-          </div>
+          <picture class="hero__image-wrapper">
+            <source media="(min-width: 1320px)" width="552" height="499" type="image/webp" srcset="images/product-big-desktop@1x.webp, images/product-big-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/product-big-tablet@1x.webp, images/product-big-tablet@2x.webp 2x">
+            <source width="280" height="270" type="image/webp" srcset="images/product-big-mobile@1x.webp, images/product-big-mobile@2x.webp 2x">
+            <source media="(min-width: 1320px)" width="552" height="499" type="image/png" srcset="images/product-big-desktop@1x.png 1x, images/product-big-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/product-big-tablet@1x.png 1x, images/product-big-tablet@2x.png 2x">
+            <img class="hero__image" src="images/product-big-mobile@1x.png" srcset="images/product-big-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая баночка корма на 500 грамм, с надписью Cat Energy Pro со вкусом курицы">
+          </picture>
           <a class="hero__button button button--primary" href="#">подобрать программу</a>
         </div>
       </div>
