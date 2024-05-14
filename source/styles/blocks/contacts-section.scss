@@ -6,19 +6,23 @@
 
 .contacts-section__wrapper-text {
   display: flex;
+  justify-content: space-between;
+  gap: 17px;
   padding-top: 26px;
   padding-bottom: 26px;
 
   @media (min-width: $viewport-medium) {
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 62px 70px;
+    gap: 80px;
   }
 
   @media (min-width: $viewport-big) {
     position: absolute;
     top: 95px;
     right: 50%;
+    transform: translateX(-45px);
+    width: 565px;
+    padding: 61px 80px;
     background-color: $bg-color-primary;
   }
 
@@ -32,6 +36,7 @@
 }
 
 .contacts-section__slogan {
+  margin: 0;
   font-family: $ff-accent;
   font-size: 16px;
   line-height: 20px;
@@ -44,11 +49,24 @@
   }
 }
 
+.contacts-section__line-break {
+  display: none;
+
+  @media (width = $viewport-medium) {
+    display: inline;
+  }
+}
+
 .contacts-section__address {
+  display: flex;
+  flex-direction: column;
   line-height: 20px;
   font-style: normal;
 
   @media (min-width: $viewport-medium) {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     font-size: 16px;
     text-align: right;
   }
@@ -59,13 +77,21 @@
 }
 
 .contacts-section__wrapper-map {
-  min-height: 362px;
-  max-height: 400px;
-  min-width: 320px;
+  height: 362px;
   overflow: hidden;
+
+  @media (min-width: $viewport-medium) {
+    height: 400px;
+  }
 }
 
 .contacts-section__image-map {
   display: block;
+  height: 362px;
   width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $viewport-medium) {
+    height: 400px;
+  }
 }

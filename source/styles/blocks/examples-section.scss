@@ -68,6 +68,10 @@
     line-height: 24px;
   }
 
+  @media ($viewport-medium <= width < $viewport-big) {
+    min-height: 72px;
+  }
+
   @media (min-width: $viewport-big) {
     margin-bottom: 55px;
   }
