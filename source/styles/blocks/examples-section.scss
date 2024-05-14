@@ -115,7 +115,6 @@
 .examples-section__item-definitions {
   display: grid;
   justify-content: center;
-  align-content: space-between;
   min-height: 56px;
   padding: 13px 5px 5px;
   text-align: center;
@@ -125,8 +124,7 @@
   @media (min-width: $viewport-medium) {
     min-height: 72px;
     min-width: 162px;
-    padding-top: 14px;
-    padding: 13px 3px 5px;
+    padding: 14px 3px 5px;
   }
 
   @media (min-width: $viewport-big) {
@@ -171,6 +169,7 @@
 
 .examples-section__definition-line-break {
   display: none;
+
   @media (width <= $viewport-small) {
     display: inline;
   }
