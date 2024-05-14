@@ -124,6 +124,6 @@
 
 .description-section__text-line-break {
   @media (width < $viewport-medium) {
-    display: none;
+    visibility: hidden;
   }
 }
