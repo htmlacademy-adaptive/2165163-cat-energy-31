@@ -19,11 +19,11 @@
 
     @media (min-width: $viewport-medium) {
       background-color: transparent;
-      background-image: linear-gradient(to top, $bg-color-special-lighter 70.5%, $bg-color-primary 29.5%);
+      background-image: linear-gradient($bg-color-primary 29.5%, $bg-color-special-lighter 70.5%);
     }
 
     @media (min-width: $viewport-big) {
-      background-image: linear-gradient(to top, $bg-color-primary 73.5%, $bg-color-special-lighter 26.5%);
+      background-image: linear-gradient($bg-color-primary 26.5%, $bg-color-special-lighter 73.5%);
     }
   }
 
