@@ -121,9 +121,3 @@
     padding-top: 0;
   }
 }
-
-.description-section__text-line-break {
-  @media (width < $viewport-medium) {
-    visibility: hidden;
-  }
-}

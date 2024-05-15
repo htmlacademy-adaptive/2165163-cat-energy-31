@@ -5,7 +5,8 @@
 }
 
 .contacts-section__wrapper-text {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   gap: 17px;
   padding-top: 26px;
@@ -13,7 +14,7 @@
 
   @media (min-width: $viewport-medium) {
     padding: 62px 70px;
-    gap: 80px;
+    gap: 155px;
   }
 
   @media (min-width: $viewport-big) {
@@ -21,6 +22,7 @@
     top: 95px;
     right: 50%;
     transform: translateX(-45px);
+    gap: 90px;
     width: 565px;
     padding: 61px 80px;
     background-color: $bg-color-primary;
@@ -46,14 +48,6 @@
   @media (min-width: $viewport-medium) {
     font-size: 20px;
     line-height: 26px;
-  }
-}
-
-.contacts-section__line-break {
-  display: none;
-
-  @media (width = $viewport-medium) {
-    display: inline;
   }
 }
 
