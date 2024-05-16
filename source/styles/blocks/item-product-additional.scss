@@ -36,6 +36,19 @@
   }
 }
 
+.item-product-additional__item-details {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 0;
+  }
+}
+
+.item-product-additional__definition {
+  text-align: right;
+}
+
 .item-product-additional__button {
   min-width: 244px;
 }
