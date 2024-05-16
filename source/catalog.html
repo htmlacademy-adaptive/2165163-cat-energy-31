@@ -12,7 +12,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body body">
-    <header class="page-header">
+    <header class="page-header page-header--inner-page">
       <div class="page-header__content-wrapper content-wrapper">
         <a class="page-header__logo-site logo-site" href="index.html">
           <picture>
@@ -367,6 +367,9 @@
           </address>
         </div>
         <div class="contacts-section__wrapper-map">
+          <div class="contacts-section__wrapper-map-interactive contacts-section__wrapper-map-interactive--no-js">
+            <iframe class="contacts-section__map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f4d75317c4feee721388542421a7ef2ab884ca936502e9de9c80456c1ccc30a&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
+          </div>
           <picture>
             <source media="(min-width: 1320px)" width="1440" height="400" type="image/webp" srcset="images/map-desktop@1x.webp, images/map-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp 2x">
