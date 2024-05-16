@@ -1,4 +1,4 @@
-/* в этот файл добавляет скрипты*/
+/* hamburger menu */
 const hamburgerMenu = document.querySelector('.hamburger-menu__list');
 const buttonToogle = document.querySelector('.hamburger-menu__toogle');
 
@@ -20,3 +20,10 @@ buttonToogle.onclick = function () {
     buttonToogle.classList.add('hamburger-menu__toogle--open');
   }
 };
+
+/* interactive map */
+const wrapperMap = document.querySelector('.contacts-section__wrapper-map-interactive');
+const imageMap = document.querySelector('.contacts-section__image-map');
+
+wrapperMap.classList.remove('contacts-section__wrapper-map-interactive--no-js');
+imageMap.classList.add('contacts-section__image-map--open-interactive-map');

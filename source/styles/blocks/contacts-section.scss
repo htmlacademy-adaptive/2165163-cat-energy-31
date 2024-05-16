@@ -79,6 +79,20 @@
   }
 }
 
+.contacts-section__map-interactive {
+  height: 362px;
+  width: 100%;
+  vertical-align: middle;
+
+  @media (min-width: $viewport-medium) {
+    height: 400px;
+  }
+}
+
+.contacts-section__wrapper-map-interactive--no-js {
+  display: none;
+}
+
 .contacts-section__image-map {
   display: block;
   height: 362px;
@@ -87,5 +101,9 @@
 
   @media (min-width: $viewport-medium) {
     height: 400px;
+  }
+
+  &--open-interactive-map {
+    display: none;
   }
 }
