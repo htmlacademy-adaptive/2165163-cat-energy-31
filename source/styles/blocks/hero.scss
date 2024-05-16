@@ -121,12 +121,16 @@
 }
 
 .hero__button {
-  max-width: 100%;
+  max-width: 400px;
+  width: 100%;
+  justify-self: center;
 
   @media (min-width: $viewport-medium) {
     grid-column: 1 / -1;
     grid-row: 3;
     z-index: 2;
+    justify-self: auto;
+    max-width: none;
     width: max-content;
     height: max-content;
     font-size: 20px;
