@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 32px;
+  padding: 20px;
   background-image: linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%);
 
   @media (min-width: $viewport-medium) {
@@ -22,6 +23,7 @@
     display: block;
     width: 78px;
     height: 80px;
+    margin-top: 39px;
     background-color: $bg-color-primary;
 
     @media (min-width: $viewport-medium) {

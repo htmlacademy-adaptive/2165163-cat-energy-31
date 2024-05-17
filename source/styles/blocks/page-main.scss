@@ -74,3 +74,23 @@
     margin-bottom: 29px;
   }
 }
+
+.page-main__product-main {
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 74;
+  }
+}
+
+.page-main__product-additional {
+  margin-bottom: 20px;
+}
+
+.page-main__newsletter {
+  padding-bottom: 39px;
+}
+
+.page-main__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

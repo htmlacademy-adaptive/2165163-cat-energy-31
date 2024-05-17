@@ -1,7 +1,10 @@
 .newsletter__title {
+  align-self: flex-start;
+  margin-bottom: 33px;
   font-family: $ff-accent;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   color: $fc-dark;
 
   @media (min-width: $viewport-medium) {
@@ -16,6 +19,8 @@
 }
 
 .newsletter__desc {
+  margin-top: 0;
+  margin-bottom: 6px;
   font-family: $ff-accent;
   font-size: 16px;
   line-height: 24px;
@@ -26,4 +31,9 @@
     font-size: 24px;
     line-height: 32px;
   }
+}
+
+.newsletter__form-newsletter {
+  max-width: 450px;
+  width: 100%;
 }
