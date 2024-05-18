@@ -9,8 +9,8 @@
     flex-direction: row;
     gap: 0;
     justify-content: center;
-    padding-left: 68px;
-    padding-right: 68px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
@@ -18,7 +18,7 @@
   width: 100%;
   min-width: 280px;
   max-width: 496px;
-  padding: 13px;
+  padding: 13px 12px 11px;
   font-family: $ff-accent;
   font-size: 20px;
   line-height: 30px;
@@ -34,4 +34,8 @@
   font-size: 20px;
   line-height: 26px;
   border: none;
+
+  @media (min-width: $viewport-medium) {
+    max-width: 256px;
+  }
 }

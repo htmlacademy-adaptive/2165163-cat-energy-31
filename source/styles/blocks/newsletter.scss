@@ -8,11 +8,13 @@
   color: $fc-dark;
 
   @media (min-width: $viewport-medium) {
+    margin-bottom: 67px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $viewport-big) {
+    margin-bottom: 72px;
     font-size: 40px;
     line-height: 40px;
   }
@@ -20,7 +22,7 @@
 
 .newsletter__desc {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   font-family: $ff-accent;
   font-size: 16px;
   line-height: 24px;
@@ -28,6 +30,8 @@
   text-align: center;
 
   @media (min-width: $viewport-medium) {
+    margin-bottom: 23px;
+    padding: 0 38px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -36,4 +40,8 @@
 .newsletter__form-newsletter {
   max-width: 450px;
   width: 100%;
+
+  @media (min-width: $viewport-medium) {
+    max-width: none;
+  }
 }

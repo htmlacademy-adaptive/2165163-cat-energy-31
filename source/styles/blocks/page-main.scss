@@ -77,16 +77,36 @@
 
 .page-main__product-main {
   @media (min-width: $viewport-medium) {
-    margin-bottom: 74;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-bottom: 71px;
   }
 }
 
 .page-main__product-additional {
   margin-bottom: 20px;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-bottom: 63px;
+  }
 }
 
 .page-main__newsletter {
-  padding-bottom: 39px;
+  margin-bottom: 40px;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-bottom: 104px;
+  }
 }
 
 .page-main__content-wrapper {
