@@ -47,6 +47,7 @@
   font-weight: 400;
   color: $fc-dark-special;
   text-transform: uppercase;
+  transition: opacity 0.3s;
 
   @media (min-width: $viewport-medium) {
     margin-bottom: 12px;
@@ -65,6 +66,14 @@
     text-align: center;
     padding-right: 0;
     margin-bottom: 8px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -127,10 +136,16 @@
       height: 60px;
     }
   }
+
+  &:hover .item-product__image {
+    filter: drop-shadow(0 0 5px $bg-color-bright-special);
+    transform: rotate(16deg);
+  }
 }
 
 .item-product__image {
   display: block;
+  transition: filter 0.3s, transform 0.3s;
 }
 
 .item-product__wrapper-description {
