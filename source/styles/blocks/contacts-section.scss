@@ -5,20 +5,26 @@
 }
 
 .contacts-section__wrapper-text {
-  display: flex;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 17px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   @media (min-width: $viewport-medium) {
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 62px 70px;
+    gap: 155px;
   }
 
   @media (min-width: $viewport-big) {
     position: absolute;
     top: 95px;
     right: 50%;
+    transform: translateX(-45px);
+    gap: 90px;
+    width: 565px;
+    padding: 61px 80px;
     background-color: $bg-color-primary;
   }
 
@@ -32,6 +38,7 @@
 }
 
 .contacts-section__slogan {
+  margin: 0;
   font-family: $ff-accent;
   font-size: 16px;
   line-height: 20px;
@@ -45,10 +52,15 @@
 }
 
 .contacts-section__address {
+  display: flex;
+  flex-direction: column;
   line-height: 20px;
   font-style: normal;
 
   @media (min-width: $viewport-medium) {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
     font-size: 16px;
     text-align: right;
   }
@@ -59,13 +71,50 @@
 }
 
 .contacts-section__wrapper-map {
-  min-height: 362px;
-  max-height: 400px;
-  min-width: 320px;
+  height: 362px;
   overflow: hidden;
+
+  @media (min-width: $viewport-medium) {
+    height: 400px;
+  }
+
+  @media (min-width: $viewport-big) {
+    background-color: $bg-color-additional-basic;
+  }
+}
+
+.contacts-section__map-interactive {
+  height: 362px;
+  width: 100%;
+  vertical-align: middle;
+  border: none;
+
+  @media (min-width: $viewport-medium) {
+    height: 400px;
+  }
+}
+
+.contacts-section__wrapper-map-interactive--no-js {
+  display: none;
 }
 
 .contacts-section__image-map {
   display: block;
+  height: 362px;
   width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $viewport-medium) {
+    height: 400px;
+  }
+
+  @media (min-width: $viewport-big) {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--open-interactive-map {
+    display: none;
+  }
 }

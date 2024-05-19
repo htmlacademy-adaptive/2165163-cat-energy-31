@@ -1,5 +1,7 @@
 .logo-site {
+  width: max-content;
   transition: opacity 0.3s;
+  flex-shrink: 0;
 
   &:hover {
     opacity: 0.8;
@@ -8,4 +10,8 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.logo-site__image {
+  display: block;
 }

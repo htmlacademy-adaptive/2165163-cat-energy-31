@@ -15,28 +15,30 @@
   &--catalog {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
     width: max-content;
     padding-left: 0;
     color: $fc-dark;
     line-height: 16px;
     text-align: left;
 
+    @media (min-width: $viewport-medium) {
+      font-size: 20px;
+      line-height: 30px;
+      gap: 25px;
+    }
+
     &::after {
       @include icon-mask(url("../../icons/stack.svg#arrow"), 24px 12px);
       flex-shrink: 0;
       content: "";
       display: block;
-      width: 24px;
+      width: 32px;
       height: 12px;
+      mask-position: left;
       background-color: $bg-color-dark;
 
       transition: all 0.3s;
-    }
-
-    @media (min-width: $viewport-medium) {
-      font-size: 20px;
-      line-height: 30px;
     }
   }
 
@@ -46,6 +48,8 @@
   }
 
   &--card-view-all {
+    padding-top: 11px;
+    padding-bottom: 9px;
     background-color: $bg-color-additional-basic;
     color: $fc-grey;
   }
@@ -53,8 +57,6 @@
   &--catalog:hover::after,
   &--catalog:active::after {
     mask-size: 32px 12px;
-    width: 32px;
-    height: 12px;
   }
 
   &--catalog:active {
