@@ -5,12 +5,28 @@
   align-items: center;
   gap: 33px;
   padding: 20px;
-  background-image: linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%);
+  background-image:
+    linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%),
+    image-set(
+      url("../../images/backgrounds/background-mobile-2@1x.webp") type("image/webp") 1x,
+      url("../../images/backgrounds/background-mobile-2@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/background-mobile-2@1x.jpg") 1x,
+      url("../../images/backgrounds/background-mobile-2@2x.jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  background-position: top center, center center;
 
   @media (min-width: $viewport-medium) {
     flex-direction: row;
     justify-content: space-between;
     padding-right: 30px;
+    background-image:
+    linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%),
+    image-set(
+      url("../../images/backgrounds/background-tablet-2@1x.webp") type("image/webp") 1x,
+      url("../../images/backgrounds/background-tablet-2@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/background-tablet-2@1x.jpg") 1x,
+      url("../../images/backgrounds/background-tablet-2@2x.jpg") 2x);
   }
 
   @media (min-width: $viewport-big) {
@@ -18,6 +34,13 @@
     justify-content: center;
     gap: 48px;
     padding: 20px;
+    background-image:
+    linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%),
+    image-set(
+      url("../../images/backgrounds/background-desktop-2@1x.webp") type("image/webp") 1x,
+      url("../../images/backgrounds/background-desktop-2@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/background-desktop-2@1x.jpg") 1x,
+      url("../../images/backgrounds/background-desktop-2@2x.jpg") 2x);
   }
 
   &::before {
