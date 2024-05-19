@@ -1,6 +1,12 @@
 .newsletter__title {
+  display: flex;
+  position: relative;
+  width: fit-content;
   align-self: flex-start;
   margin-bottom: 33px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 40px;
   font-family: $ff-accent;
   font-size: 24px;
   line-height: 24px;
@@ -9,14 +15,50 @@
 
   @media (min-width: $viewport-medium) {
     margin-bottom: 67px;
+    margin-left: 0;
+    padding-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
   @media (min-width: $viewport-big) {
+    margin-left: -40px;
     margin-bottom: 72px;
     font-size: 40px;
     line-height: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block;
+    height: 2px;
+    width: 100vw;
+    background-color: $bg-color-bright-basic;
+    box-shadow: 100vw 0 0 $bg-color-bright-basic;
+    z-index: -1;
+
+    @media (min-width: $viewport-medium) {
+      top: 14px;
+    }
+
+    @media (min-width: $viewport-big) {
+      top: 18px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $bg-color-primary;
+    z-index: -1;
   }
 }
 
