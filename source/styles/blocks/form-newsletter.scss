@@ -38,4 +38,10 @@
   @media (min-width: $viewport-medium) {
     max-width: 256px;
   }
+
+  @media (min-width: $viewport-big) {
+    width: fit-content;
+    max-width: none;
+    min-width: 256px;
+  }
 }

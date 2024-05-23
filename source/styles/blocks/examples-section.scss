@@ -156,11 +156,10 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $bg-color-primary;
-    bottom: 8px;
+    bottom: 5px;
   }
 
   @media (min-width: $viewport-big) {
-    bottom: 5px;
     max-width: 95%;
     background-color: $bg-color-special-lighter;
   }

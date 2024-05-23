@@ -141,6 +141,7 @@
 
 .item-product__image {
   display: block;
+  max-height: 100%;
   transition: filter 0.3s, transform 0.3s;
 }
 
