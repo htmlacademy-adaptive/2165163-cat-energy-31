@@ -14,7 +14,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body body">
-    <header class="page-header page-header--inner-page">
+    <header class="page-header page-header--inner-page" data-test="header">
       <div class="page-header__content-wrapper content-wrapper">
         <a class="page-header__logo-site logo-site" href="index.html">
           <picture>
@@ -43,7 +43,7 @@
       <div class="content-wrapper">
         <h1 class="page-main__title">Каталог продукции</h1>
       </div>
-      <section class="page-main__product-main product-main">
+      <section class="page-main__product-main product-main" data-test="catalog">
         <div class="content-wrapper">
           <h2 class="visually-hidden">Основные товары</h2>
           <ul class="product-main__list-product list-product">
@@ -278,7 +278,7 @@
           </ul>
         </div>
       </section>
-      <section class="page-main__product-additional product-additional">
+      <section class="page-main__product-additional product-additional" data-test="additional">
         <div class="content-wrapper">
           <h2 class="product-additional__title">Дополнительные товары</h2>
           <div class="product-additional__wrapper">
@@ -359,7 +359,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts-section contacts-section">
+      <section class="page-footer__contacts-section contacts-section" data-test="contacts">
         <div class="contacts-section__wrapper-text contacts-section__wrapper-text--inner-page content-wrapper">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts-section__slogan">
@@ -384,7 +384,7 @@
           </picture>
         </div>
       </section>
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper" data-test="footer">
         <div class="page-footer__content-wrapper content-wrapper">
           <a class="page-footer__logo-site logo-site" href="index.html">
             <img class="logo-site__image" src="images/logos/logo-cat-energy-mini.svg" width="128" height="24" alt="Логотип сайта Cat Energy">

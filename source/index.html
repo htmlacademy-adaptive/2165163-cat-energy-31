@@ -15,7 +15,7 @@
   </head>
   <body class="page__body body">
     <header class="page-header page-header--index-page">
-      <div class="page-header__content-wrapper content-wrapper">
+      <div class="page-header__content-wrapper content-wrapper" data-test="header">
         <a class="page-header__logo-site logo-site" href="index.html" aria-current="page">
           <picture>
             <source media="(min-width: 1320px)" width="202" height="59" type="image/svg+xml" srcset="images/logos/logo-cat-energy-big.svg">
@@ -38,7 +38,7 @@
           </ul>
         </nav>
       </div>
-      <div class="page-header__hero hero">
+      <div class="page-header__hero hero" data-test="hero">
         <div class="hero__content-wrapper content-wrapper">
           <h1 class="hero__title">Функциональное<br> питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
@@ -56,7 +56,7 @@
     </header>
     <main class="page-main page-main--index-page">
       <div class="content-wrapper">
-        <section class="page-main__catalogs catalogs">
+        <section class="page-main__catalogs catalogs" data-test="programs">
           <h2 class="visually-hidden">Каталоги товаров</h2>
           <ul class="catalogs__list">
             <li class="catalogs__item catalog catalog--thin-icon">
@@ -71,7 +71,7 @@
             </li>
           </ul>
         </section>
-        <section class="page-main__description-section description-section">
+        <section class="page-main__description-section description-section" data-test="features">
           <h2 class="description-section__title">Как это работает</h2>
           <ol class="description-section__list">
             <li class="description-section__item description-section__item--icon-substance">
@@ -97,7 +97,7 @@
           </ol>
         </section>
       </div>
-      <section class="page-main__examples-section examples-section">
+      <section class="page-main__examples-section examples-section" data-test="proof">
         <div class="examples-section__content-wrapper content-wrapper">
           <div class="examples-section__wrapper-text">
             <h2 class="examples-section__title">Живой пример</h2>
@@ -144,7 +144,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__contacts-section contacts-section">
+      <section class="page-footer__contacts-section contacts-section" data-test="contacts">
         <div class="contacts-section__wrapper-text contacts-section__wrapper-text--index-page content-wrapper">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts-section__slogan">
@@ -169,7 +169,7 @@
           </picture>
         </div>
       </section>
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper" data-test="footer">
         <div class="page-footer__content-wrapper content-wrapper">
           <a class="page-footer__logo-site logo-site" href="index.html">
             <img class="logo-site__image" src="images/logos/logo-cat-energy-mini.svg" width="128" height="24" alt="Логотип сайта Cat Energy">
