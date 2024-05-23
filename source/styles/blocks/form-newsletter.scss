@@ -25,6 +25,10 @@
   color: $fc-grey;
   text-transform: uppercase;
   border: 1px solid $bg-color-special-grey;
+
+  &--invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .form-newsletter__button {
