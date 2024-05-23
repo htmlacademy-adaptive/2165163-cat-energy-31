@@ -1,0 +1,15 @@
+.catalogs__list {
+  @include list-reset();
+
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $viewport-medium) {
+    gap: 30px;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}

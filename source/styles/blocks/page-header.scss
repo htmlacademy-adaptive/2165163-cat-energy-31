@@ -1,0 +1,73 @@
+.page-header {
+  padding-top: 13px;
+
+  @media (min-width: $viewport-medium) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $viewport-big) {
+    padding-top: 55px;
+  }
+
+  &--index-page {
+    margin-bottom: 5px;
+
+    @media (min-width: $viewport-medium) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $viewport-big) {
+      min-height: 694px;
+      background-image:
+        linear-gradient(to left, rgba($bg-color-bright-basic, 0.85) 50%, $bg-color-primary 50%),
+        image-set(url("../../images/backgrounds/background-desktop-1@1x.webp") type("image/webp") 1x,
+        url("../../images/backgrounds/background-desktop-1@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/background-desktop-1@1x.jpg") 1x,
+        url("../../images/backgrounds/background-desktop-1@2x.jpg") 2x),
+        linear-gradient(to left, #403e49 50%, $bg-color-primary 50%);
+      background-size: 100%, 1040px 694px;
+      background-position: center, calc(50% + 520px) bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 82px;
+    }
+  }
+
+  &--inner-page {
+    @media (width < $viewport-medium) {
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+}
+
+
+.page-header__content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (width >= $viewport-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 33px;
+  }
+}
+
+.page-header__logo-site {
+  display: block;
+  width: 190px;
+  height: 38px;
+
+  @media (width < $viewport-medium) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $viewport-medium) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $viewport-big) {
+    width: 202px;
+    height: 59px;
+  }
+}

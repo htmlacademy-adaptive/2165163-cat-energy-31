@@ -1,0 +1,18 @@
+.list-product {
+  @include list-reset();
+
+  display: grid;
+  grid-template-columns: minmax(280px, 450px);
+  justify-content: center;
+
+  @media (min-width: $viewport-medium) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    gap: 141px 60px;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 143px 80px;
+  }
+}

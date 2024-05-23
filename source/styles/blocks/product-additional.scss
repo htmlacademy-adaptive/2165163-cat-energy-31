@@ -1,0 +1,216 @@
+.product-additional__title {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  font-weight: 400;
+  font-family: $ff-accent;
+  font-size: 24px;
+  line-height: 24px;
+  color: $fc-dark;
+  z-index: 2;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 80px;
+    margin-left: 0;
+    padding-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block;
+    height: 2px;
+    width: 100vw;
+    background-color: $bg-color-bright-basic;
+    box-shadow: 100vw 0 0 $bg-color-bright-basic;
+    z-index: -1;
+
+    @media (min-width: $viewport-medium) {
+      top: 14px;
+    }
+
+    @media (min-width: $viewport-big) {
+      top: 18px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $bg-color-primary;
+    z-index: -1;
+  }
+}
+
+.product-additional__wrapper {
+  display: grid;
+  gap: 34px;
+
+  @media (min-width: $viewport-medium) {
+    gap: 69px;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  }
+}
+
+.product-additional__list-product-additional {
+  @include list-reset();
+
+  max-width: 450px;
+  justify-self: center;
+  width: 100%;
+
+  @media (min-width: $viewport-medium) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $viewport-medium) {
+    max-width: none;
+  }
+}
+
+.product-additional__item-product-additional {
+  display: grid;
+  gap: 15px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $bg-color-special-grey;
+
+  @media (min-width: $viewport-medium) {
+    padding: 25px 37px 27px;
+    gap: 22px;
+    border-left: 1px solid $bg-color-special-grey;
+    border-right: 1px solid $bg-color-special-grey;
+  }
+
+  @media (min-width: $viewport-big) {
+    grid-template-columns: 1fr 244px;
+    gap: 40px;
+    padding: 15px 0 16px;
+    border-left: none;
+    border-right: none;
+  }
+
+  &:first-child {
+    border-top: 1px solid $bg-color-special-grey;
+  }
+}
+
+.product-additional__wrapper-description {
+  display: grid;
+  gap: 12px;
+
+  @media (min-width: $viewport-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $viewport-big) {
+    align-items: center;
+    gap: 41px;
+  }
+}
+
+.product-additional__subtitle {
+  margin: 0;
+  font-family: $ff-accent;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $fc-dark-special;
+  text-transform: uppercase;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.product-additional__list-details {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-additional__item-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+
+  @media (min-width: $viewport-medium) {
+    margin-bottom: 0;
+    grid-template-columns: 3fr 1fr;
+    gap: 22px;
+    justify-items: end;
+  }
+}
+
+.product-additional__term {
+  @media (min-width: $viewport-medium) {
+    padding-top: 4px;
+  }
+
+  @media (min-width: $viewport-big) {
+    text-align: left;
+    justify-self: start;
+  }
+}
+
+.product-additional__definition {
+  margin-left: 0;
+  text-align: right;
+
+  @media (min-width: $viewport-medium) {
+    padding-top: 2px;
+    padding-right: 3px;
+  }
+
+  @media (min-width: $viewport-big) {
+    padding-top: 5px;
+    padding-right: 1px;
+  }
+}
+
+.product-additional__button {
+  min-width: 244px;
+}
+
+.product-additional__promo {
+  min-height: 290px;
+
+  @media (min-width: $viewport-medium) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $viewport-big) {
+    min-height: 288px;
+    align-self: start;
+  }
+}

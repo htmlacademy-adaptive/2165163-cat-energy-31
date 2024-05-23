@@ -1,0 +1,93 @@
+.slider-images {
+  position: relative;
+  display: grid;
+
+  @media (min-width: $viewport-big) {
+    align-self: flex-start;
+  }
+}
+
+.slider-images__image-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+
+  &--before {
+    z-index: 2;
+    width: 50%;
+    overflow: hidden;
+    background-color: $bg-color-special-lighter;
+
+    @media (min-width: $viewport-medium) {
+      background-color: transparent;
+      background-image: linear-gradient(360deg, $bg-color-special-lighter 70.5%, $bg-color-primary 29.5%);
+    }
+
+    @media (min-width: $viewport-big) {
+      background-image: linear-gradient(360deg, $bg-color-special-lighter 73.5%, $bg-color-primary 26.5%);
+    }
+  }
+
+  &--after {
+    z-index: 1;
+  }
+}
+
+.slider-images__image {
+  display: block;
+  max-width: none;
+}
+
+.slider-images__button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  height: 100%;
+  width: 4px;
+  padding: 0;
+  background-color: $bg-color-special;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, opacity 0.3s;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    background-color: $bg-color-primary;
+    border: 2px solid $bg-color-special;
+    border-radius: 50%;
+  }
+
+  &::after {
+    @include icon-mask(url("../../icons/stack.svg#button-slider"), 24px 18px);
+    width: 24px;
+    height: 18px;
+    background-color: $bg-color-special;
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $bg-color-bright-basic;
+  }
+
+  &:hover::before {
+    border-color: $bg-color-bright-basic;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

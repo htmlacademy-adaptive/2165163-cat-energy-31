@@ -1,0 +1,87 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  padding: 20px;
+  background-image:
+    linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%),
+    image-set(
+      url("../../images/backgrounds/background-mobile-2@1x.webp") type("image/webp") 1x,
+      url("../../images/backgrounds/background-mobile-2@2x.webp") type("image/webp") 2x,
+      url("../../images/backgrounds/background-mobile-2@1x.jpg") 1x,
+      url("../../images/backgrounds/background-mobile-2@2x.jpg") 2x);
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  background-position: top center, center center;
+
+  @media (min-width: $viewport-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+    background-image:
+      linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%),
+      image-set(
+        url("../../images/backgrounds/background-tablet-2@1x.webp") type("image/webp") 1x,
+        url("../../images/backgrounds/background-tablet-2@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/background-tablet-2@1x.jpg") 1x,
+        url("../../images/backgrounds/background-tablet-2@2x.jpg") 2x);
+  }
+
+  @media (min-width: $viewport-big) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    padding: 20px;
+    background-image:
+      linear-gradient(to bottom, rgba($bg-color-bright-basic, 0.85) 50%, rgba($bg-color-bright-basic, 0.85) 50%),
+      image-set(
+        url("../../images/backgrounds/background-desktop-2@1x.webp") type("image/webp") 1x,
+        url("../../images/backgrounds/background-desktop-2@2x.webp") type("image/webp") 2x,
+        url("../../images/backgrounds/background-desktop-2@1x.jpg") 1x,
+        url("../../images/backgrounds/background-desktop-2@2x.jpg") 2x);
+  }
+
+  &::before {
+    @include icon-mask(url("../../icons/stack.svg#present"), 78px 80px);
+
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin-top: 30px;
+    background-color: $bg-color-primary;
+
+    @media (min-width: $viewport-medium) {
+      mask-size: 80px 82px;
+      width: 80px;
+      height: 82px;
+      margin-top: 0;
+      margin-left: 58px;
+    }
+
+    @media (min-width: $viewport-big) {
+      margin-left: 0;
+      margin-top: 16px;
+    }
+  }
+}
+
+.promo__promo-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $fc-light;
+  text-align: center;
+
+  @media (min-width: $viewport-medium) {
+    text-align: left;
+    max-width: 39%;
+  }
+
+  @media (min-width: $viewport-big) {
+    text-align: center;
+    max-width: none;
+    margin: 0;
+  }
+}

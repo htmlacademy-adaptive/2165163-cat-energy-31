@@ -1,0 +1,70 @@
+.page-footer__wrapper {
+  background-color: $bg-color-additional-basic;
+}
+
+.page-footer__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $viewport-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $viewport-big) {
+    padding-top: 47px;
+    padding-bottom: 48px;
+  }
+}
+
+.page-footer__logo-site {
+  padding: 19px 0;
+
+  @media (min-width: $viewport-medium) {
+    padding-right: 38px;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  transition: opacity 0.3s;
+
+  @media (min-width: $viewport-medium) {
+    gap: 23px;
+  }
+
+  &::after {
+    @include icon-mask(url("../../icons/stack.svg#logo-html-academy"), 27px 34px);
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 27px;
+    height: 34px;
+    background-color: $bg-color-special;
+
+    transition: background-color 0.3s;
+  }
+
+  &:hover::after {
+    background-color: $bg-color-bright-basic;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    background-color: $bg-color-bright-basic;
+  }
+}

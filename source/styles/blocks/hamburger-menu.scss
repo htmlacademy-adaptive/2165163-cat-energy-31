@@ -1,0 +1,62 @@
+.hamburger-menu {
+  position: relative;
+}
+
+.hamburger-menu__toogle {
+  position: absolute;
+  top: -22px;
+  right: -3px;
+  transform: translateY(-100%);
+  width: 24px;
+  height: 24px;
+  background-color: $bg-color-dark;
+
+  cursor: pointer;
+
+  &--open {
+    @include icon-mask(url("../../icons/stack.svg#exit"), 18px 18px);
+  }
+
+  &--close {
+    @include icon-mask(url("../../icons/stack.svg#hamburger-menu"), 24px 24px);
+    top: -21px;
+    right: 1px;
+  }
+
+  &--no-js {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.hamburger-menu__list {
+  @media (width < $viewport-medium) {
+    display: flex;
+    position: absolute;
+
+    &--open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      box-sizing: content-box;
+      width: 100%;
+    }
+
+    &--close {
+      display: none;
+    }
+
+    &--no-js {
+      display: flex;
+      position: static;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.catalog {
+  position: relative;
+  padding: 30px 20px 12px;
+  background-color: $bg-color-additional-basic;
+
+  @media (min-width: $viewport-medium) {
+    min-width: 708px;
+    padding: 77px 316px 47px 52px;
+  }
+
+  @media (min-width: $viewport-big) {
+    min-width: auto;
+    padding: 77px 52px 49px;
+  }
+
+  &--thin-icon::before,
+  &--thick-icon::before {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    content: "";
+    display: block;
+    background-color: $bg-color-bright-basic;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    @media (min-width: $viewport-medium) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: auto;
+      right: 63px;
+    }
+
+    @media (min-width: $viewport-big) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
+  }
+
+  &--thin-icon::after {
+    @include icon-mask(url("../../icons/stack.svg#cat-1"), 36px 50px);
+
+    position: absolute;
+    top: 21px;
+    left: 27px;
+    content: "";
+    display: block;
+    background-color: $bg-color-dark;
+    width: 36px;
+    height: 50px;
+
+    @media (min-width: $viewport-medium) {
+      mask-size: 140px 194px;
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      left: auto;
+      right: 93px;
+    }
+
+    @media (min-width: $viewport-big) {
+      mask-size: 70px 97px;
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+      right: auto;
+    }
+  }
+
+  &--thick-icon::after {
+    @include icon-mask(url("../../icons/stack.svg#cat-2"), 67px 28px);
+
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    content: "";
+    display: block;
+    background-color: $bg-color-dark;
+    width: 67px;
+    height: 28px;
+
+    @media (min-width: $viewport-medium) {
+      mask-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      left: auto;
+      right: 29px;
+    }
+
+    @media (min-width: $viewport-big) {
+      mask-size: 134px 56px;
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      left: 33px;
+      right: auto;
+    }
+  }
+}
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
+  font-family: $ff-accent;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $fc-dark;
+  text-transform: uppercase;
+
+  @media (min-width: $viewport-medium) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $viewport-big) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.catalog__desc {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 8px;
+
+  @media (min-width: $viewport-medium) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $fc-dark;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $viewport-big) {
+    margin-bottom: 17px;
+  }
+}

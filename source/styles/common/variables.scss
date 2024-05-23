@@ -1,1 +1,35 @@
-/* здесь используйте глобальные переменные */
+// viewport size
+$viewport-small: 320px;
+$viewport-medium: 768px;
+$viewport-big: 1320px;
+
+// page padding
+$page-padding-small: 20px;
+$page-padding-medium: 30px;
+$page-padding-big: 50px; /* в макете 110px */
+
+// content wrapper width
+$content-min-width: 320px;
+$content-max-width: 1320px;
+
+// font-family
+$ff-primary: "Lato", "Tahoma", sans-serif;
+$ff-accent: "Oswald", "Arial", sans-serif;
+
+// font color
+$fc-dark: #000000;
+$fc-dark-lighter: #111111; /* link header in inner-page, promo text in map, title last card */
+$fc-dark-special: #222222; /* title in card */
+$fc-grey: #444444;
+$fc-light: #ffffff;
+
+// background color
+$bg-color-primary: #ffffff;
+$bg-color-additional-basic: #f2f2f2;
+$bg-color-additional-special: #ebebeb; /* button hover, active */
+$bg-color-bright-basic: #68b738;
+$bg-color-bright-special: #5eaa2f; /* button hover, active */
+$bg-color-special: #666666; /* ico-links footer, button slider */
+$bg-color-special-lighter: #eaeaea; /* section examples */
+$bg-color-special-grey: #cdcdcd; /* border term section examples */
+$bg-color-dark: #000000;
